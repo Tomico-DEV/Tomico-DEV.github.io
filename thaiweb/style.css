@@ -62,8 +62,7 @@ li {
   margin-right: auto;
 }
 .selecticon > img:hover {
-  min-height: 4.5em;
-  margin: 0.25em;
+  height: 80%;
 }
 article {
   padding: 1.7em;
