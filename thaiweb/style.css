@@ -11,6 +11,7 @@ header {
   background-color: HotPink;
   color: white;
   margin: 0;
+  height: 6em;
   font-weight: bolder;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -44,6 +45,7 @@ li {
 }
 .selecticon {
   min-width: 6em;
+  flex: 1;
   display: flex;
   align-items: center;
   background-color: #1A202C;
@@ -56,7 +58,10 @@ li {
 }
 .selecticon > img {
   object-fit: scale-down;
-  margin: 0.5em;
+  min-width: 2.5em;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .selecticon > img:hover {
   min-height: 4.5em;
