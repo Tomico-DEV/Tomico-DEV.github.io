@@ -43,7 +43,7 @@ li {
   margin-left: 0.3em;
 }
 .selecticon {
-  flex: 1;
+  min-width: 6em;
   display: flex;
   align-items: center;
   background-color: #1A202C;
@@ -55,7 +55,7 @@ li {
   cursor: pointer;
 }
 .selecticon > img {
-  min-height: 4em;
+  object-fit: scale-down;
   margin: 0.5em;
 }
 .selecticon > img:hover {
