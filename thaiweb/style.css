@@ -1,0 +1,213 @@
+* {
+  font-family: 'Athiti', sans-serif;
+}
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: HotPink;
+  color: white;
+  margin: 0;
+  font-weight: bolder;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 10px 10px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+h1 {
+  font-size: 2em;
+}
+p {
+  font-size: larger;
+}
+li {
+  font-size: larger;
+}
+.heading {
+  margin: 1.2em;
+  height: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  flex-direction: row;
+  flex-grow: 100;
+}
+.heading > h1 {
+  margin: 0;
+  margin-left: 0.3em;
+}
+.selecticon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #1A202C;
+  box-shadow:
+    -8px 0 8px hsl(0deg 0% 0% / 0.075),
+    -15px 0 15px hsl(0deg 0% 0% / 0.075);
+}
+.selecticon:hover {
+  cursor: pointer;
+}
+.selecticon > img {
+  min-height: 4em;
+  margin: 0.5em;
+}
+.selecticon > img:hover {
+  min-height: 4.5em;
+  margin: 0.25em;
+}
+article {
+  padding: 1.7em;
+  padding-bottom: 0;
+}
+.articleHeader {
+  width: 100%;
+  text-align: center;
+}
+.plantlist {
+  min-width: 40vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+.plantlist > div {
+  margin: 14px;
+  border-radius: 3vh;
+  display: flex;
+  min-width: 30vh;
+  max-width: 100vw;
+  transition: margin-top 0.1s;
+  flex: 1;
+  flex-direction: column;
+  background-color: whitesmoke;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 10px 10px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+.plantlist > div:hover {
+  cursor: pointer;
+  margin-top: 5px;
+}
+.plantlist > div > img {
+  object-fit: cover;
+  border-radius: 3vh 3vh 0 0;
+}
+.plantlist > div > div {
+  padding: 14px;
+  padding-bottom: 14px;
+  padding-top: 7px;
+}
+.plantlist > div > div > h1 {
+  font-weight: normal;
+  font-size: larger;
+  padding: 0;
+  margin: 0;
+}
+.plantlist > div > div > p {
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  color: silver;
+}
+.plantImg {
+  max-height: 40em;
+  max-width: 60em;
+  object-fit: scale-down;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 10px 10px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+.content {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.knowledge > p {
+  text-align: justify;
+  text-indent: 8vw;
+}
+.knowledge > h1 {
+  margin: 0;
+}
+.imgRef {
+  text-align: center;
+  color: silver;
+}
+.niceFact {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 10px 10px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+.niceFact > h1 {
+  margin: 0;
+}
+.niceFact > p {
+  text-align: justify;
+  margin: 0;
+}
+.quote {
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quote > p {
+  text-align: center;
+  tab-size: 10vw;
+}
+.quote > h1 {
+  font-size: 6em;
+  margin: 0;
+  line-height: 0.5;
+}
+.closingQuote {
+  text-align: right;
+}
+.reference {
+  color: white;
+  background-color: #1A202C;
+  padding: 2vw;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:
+    0 -1px 1px hsl(0deg 0% 0% / 0.075),
+    0 -2px 2px hsl(0deg 0% 0% / 0.075),
+    0 -4px 4px hsl(0deg 0% 0% / 0.075),
+    0 -10px 10px hsl(0deg 0% 0% / 0.075),
+    0 -16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+.reference > h1 {
+  margin: 0;
+  font-size: 3em;
+}
+.reference > a {
+  color: turquoise;
+}

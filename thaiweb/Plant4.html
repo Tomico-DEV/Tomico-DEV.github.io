@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title class="PNTH">template</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>พฤกษาน่ารู้</h1>
+        <h1> แห่ง โรงเรียนเตรียมอุดมศึกษา</h1>
+      </div>
+      <div class="selecticon" onclick="location.href='index.html';">
+        <img src="assets/plant.svg" alt="ไม่สามารถแสดงภาพ">
+      </div>
+      <div class="selecticon" onclick="location.href='members.html';">
+        <img src="assets/member.svg" alt="ไม่สามารถแสดงภาพ">
+      </div>
+    </header>
+    <article>
+      <div class="articleHeader">
+        <h1 class="PNTH">PlantNameTH</h1>
+      </div>
+      <img class="plantImg" src="assets\Plants\ประดู่บ้าน\image-13.jpg" alt="ไม่สามารถแสดงภาพ">
+      <div class="content">
+        <p>
+          <b>ชื่อทั่วไป: </b><label class="PNTH">PlantNameTH</label>
+          <br>
+          <b>ชื่ออังกฤษ: </b><label class="PNEN">PlantNameEng</label>
+          <br>
+          <b>ชื่อวิทยาศาสตร์: </b><label class="PNSCI">PlantNameSci</label>
+          <br>
+        </p>
+        <div class="knowledge">
+
+          <p>go find info so I can write this article (pretty please)</p>
+
+          <a href="https://pantip.com/topic/40261000" target=”_blank”>
+            <img class="plantImg" src="assets/Plants/กัลปพฤกษ์/bloom.jpg" alt="ไม่สามารถแสดงภาพ" href="https://pantip.com/topic/40261000">
+          </a>
+
+          <div class="niceFact" style="background-color: turquoise;">
+            <h1>⚕️ สมุนไพร</h1>
+            <p>
+                here's an interesting fact
+            </p>
+          </div>
+
+          <div class="niceFact" style="background-color: orange;">
+            <h1>☸️ ความเชื่อ</h1>
+            <p>
+                more facts!
+            </p>
+          </div>
+
+          <div class="quote">
+            <h1>“</h1>
+            <div style="display: flex;">
+              <div style="margin-left: auto; margin-right: 2vw;">
+                <p>นานาทุมาผลธา</p>
+                <p>รายรอบสโรทกคือนิล</p>
+                <p>เกิดกัลปพฤกษ์พฤกษอุฬาร</p>
+                <p>ประสงค์ใดปนโดยจิตนุกูล</p>
+              </div>
+              <div style="margin-right: auto; margin-left: 2vw;">
+                <p>ผกากอบเป็นอาจิณ</p>
+                <p>ฉัตรกั้นกําบังสูรย์</p>
+                <p>ธนาสารก็สมบูรณ์</p>
+                <p>ทุกสิ่งสรรพโภคา</p>
+              </div>
+            </div>
+            <h1 class="closingQuote">”</h1>
+          </div>
+
+
+        </div>
+      </div>
+    </article>
+
+    <div class="reference">
+      <h1>อ้างอิง</h1>
+      <a href="" target=”_blank”></a><br>
+    </div>
+    <script type="text/javascript">
+        function fill(target, text) {
+          for (var i = 0; i < target.length; i++) {
+            target[i].innerHTML = text;
+          }
+        }
+
+        var PNTH = document.getElementsByClassName("PNTH");
+        var PNEN = document.getElementsByClassName("PNEN");
+        var PNSCI = document.getElementsByClassName("PNSCI");
+
+        var ThaiName = "ประดู่บ้าน";
+        var EngName = "PlantNameEN";
+        var SciName = "PlantusScientia";
+
+        fill(PNTH, ThaiName);
+        fill(PNEN, EngName);
+        fill(PNSCI, SciName);
+
+    </script>
+  </body>
+</html>
